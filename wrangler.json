@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "workers-add-delete-plans-whm-cpanel",
+	"main": "./workers/app.ts",
+	"compatibility_date": "2025-10-08",
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"kv_namespaces": [
+		{
+			"binding": "WHM_COOKIES",
+			"id": "whm_cookies_placeholder",
+			"preview_id": "whm_cookies_preview"
+		}
+	],
+	"vars": {
+		"API_VERSION": "1.0.0"
+	}
+}
